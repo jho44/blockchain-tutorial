@@ -8,3 +8,17 @@ Alchemy is RPC provider
 ## TS vs JS
 
 - `import` rather than `require`
+
+## Hardhat
+
+popular smart contract dev framework which enables you to easily
+
+- write tests
+- enable cross-chain apps (2+ blockchains)
+- save where contract deployed
+
+- js-based dev
+
+## Misc
+
+- "EVM network" = solidity works on it

@@ -1,0 +1,30 @@
+{
+  "name": "hardhat-simple-storage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-verify": "^2.0.0",
+    "@nomiclabs/hardhat-etherscan": "^3.1.8",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "chai": "^4.2.0",
+    "ethers": "^6.4.0",
+    "hardhat": "^2.19.4",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.6",
+    "typechain": "^8.3.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.1"
+  },
+  "scripts": {
+    "deploy:hardhat": "yarn hardhat run scripts/deploy.js",
+    "deploy:rinkeby": "yarn hardhat run scripts/deploy.js --network rinkeby",
+    "deploy:local": "yarn hardhat run scripts/deploy.js --network localhost"
+  }
+}
