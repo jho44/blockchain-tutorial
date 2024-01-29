@@ -21,3 +21,9 @@
 - run `yarn hardhat test --grep store` to run all tests that mention "store" in description
 - write it as `it.only` instead of `it` if you'd like to test just one func
 - Solidity Coverage is good tool for determining which lines of your contract aren't covered by a test
+
+## TS
+
+- one big new thing is how to type your contract in tests
+  - don't want it to simply be of type Contract bc TS doesn't know that Contract has `retrieve` and `store` funcs
+  - resolve by installing and importing typechain and calling `yarn hardhat typechain`
