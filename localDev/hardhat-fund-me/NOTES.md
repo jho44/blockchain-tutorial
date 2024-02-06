@@ -122,3 +122,26 @@ scripts: {
 ```
 
 NOTE: we don't use eslint so can just delete those from your proj if you started with one of the hardhat starters
+
+# DAPP NOTES
+
+## General
+
+- all dapps allow you to connect your wallet and trigger contract funcs via some event trigger
+- usu have 2 repos to build dapp:
+  1. one for smart contracts
+  2. one for frontend/website
+
+## Wallets / Blockchain Nodes
+
+- wallet has blockchain node connected to it so that you can interact with blockchain
+- alchemy and infura are used to creating provider / node to send your transactions to blockchain
+
+## Types of Funcs
+
+- external funcs are slightly cheaper than public funcs (it means our contract can't call this func)
+- virtual funcs means it's like an interface -- expected to be overridden
+
+## Events
+
+- emitted to data storage outside of contract they're declared in
